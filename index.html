@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reverse a string
+        let str="hello";
+        let evennum=0
+        for (i=str.length-1;i>=0;i--){
+            console.log(str[i])
+        }
+        //even numbers sum and odd numbers sum in an array 
+        var arr=[23,54,67,64,46,95,98];
+        evensum=0;
+        oddsum=0;
+        for(num of arr){
+            if (num%2==0){
+                evensum+=num
+            }
+            else{
+                oddsum+=num
+            }
+        }
+        console.log("evensum =",evensum);
+        console.log("oddsum =",oddsum);
+
+        //iteration over objects
+          obj ={
+            name:"anvitha",
+            rollno:20,
+            branch:"MCA"
+        };
+        for(var[keys,values]of Object.entries(obj)){
+            console.log(keys,":",values);
+
+        }
+        
+        
+
+    </script>
+</body>
+</html>
